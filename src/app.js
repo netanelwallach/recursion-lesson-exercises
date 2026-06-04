@@ -4,25 +4,27 @@
 */
 
 //Exercise 1
-const findFactorial = function() {
+const findFactorial = function (num) {
   //Your code here
-
-}
+  if (num == 1) {
+    return num;
+  } else {
+    return num * findFactorial(num - 1);
+  }
+};
 
 //Exercise 2
-const reverseString = function() {
+const reverseString = function () {
   //Your code here
-
-}
+};
 
 //Exercise 3
-const arr1 = [1, 2, 3]
-const arr2 = []
+const arr1 = [1, 2, 3];
+const arr2 = [];
 
-const swap = function() {
+const swap = function () {
   //Your code here
-
-}
+};
 
 /* DO NOT REMOVE THE EXPORTS BELOW */
-module.exports = { findFactorial, reverseString, swap }
+module.exports = { findFactorial, reverseString, swap };
